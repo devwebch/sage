@@ -2,7 +2,6 @@
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
 
-echo 'Test deployment';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
