@@ -1,0 +1,22 @@
+.footer {
+  background: #333;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .widget {
+    color: #fff;
+    .widget__title {
+      margin: 0 0 10px;
+      padding: 0;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { }

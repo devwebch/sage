@@ -1,0 +1,44 @@
+@keyframes mobileNavOpacityIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes mobileNavOpacityOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes stickyHeaderIn {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes stickyHeaderOut {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -100px;
+  }
+}

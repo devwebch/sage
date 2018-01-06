@@ -1,0 +1,24 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-default;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { }

@@ -1,0 +1,25 @@
+.sidebar {
+  .widget {
+    margin:0 0 20px;
+    background: #f9f9f9;
+    padding:20px;
+
+    .widget__title {
+      font-size: 1.1em;
+      margin: 0 0 10px;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { }

@@ -1,0 +1,229 @@
+.banner {
+  background: $banner-background;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+
+  .brand {
+    font-size: 2em;
+    color: #fff;
+  }
+
+  .custom-logo {
+    width: 150px;
+    height: auto;
+  }
+}
+.home .banner--transparent {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+}
+
+.nav-primary {
+  display: none;
+  float: right;
+
+  .nav {
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      position: relative;
+
+      a {
+        color: #fff;
+      }
+      &.menu-item-has-children {
+        a {
+          padding-right: 28px;
+        }
+        > a::after {
+          font-family: 'FontAwesome';
+          content: "\f078";
+          font-size: 10px;
+          display: block;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 0;
+          top: 30%;
+        }
+
+        .menu-item-has-children {
+          > a::after {
+            content: "\f054";
+          }
+        }
+
+        &:hover > .sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    color: #333;
+    list-style: none outside;
+    width: 200px;
+    margin: 0;
+    padding: 10px 0;
+
+    li {
+      float: none;
+
+      a {
+        display: block;
+        color: #666;
+        padding: 10px 20px;
+      }
+
+      .sub-menu {
+        left: 100%;
+        top: -10px;
+      }
+    }
+  }
+}
+
+.mobile-hamburger {
+  position: absolute;
+  top: $hamburger-position-top;
+  right: $hamburger-position-right;
+  z-index: 20;
+  width: 30px;
+  height: 24px;
+  transform: rotate(0deg);
+  transition: rotate .5s ease-in-out;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    height: $hamburger-line-width;
+    width: 100%;
+    background: $hamburger-color;
+    border-radius: 0px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  &.open span {
+    background: $hamburger-color-open;
+  }
+
+  span:nth-child(1) {
+    top: 0px;
+  }
+  span:nth-child(2), span:nth-child(3) {
+    top: 10px;
+  }
+  span:nth-child(4) {
+    top: 20px;
+  }
+  &.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  &.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  &.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  &.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+}
+
+.nav-mobile {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0 50px;
+  color: #fff;
+  z-index: 10;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+
+  ul {
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &.open {
+    display: flex;
+    visibility: visible;
+    animation: mobileNavOpacityIn .3s ease-out;
+  }
+  &.closed {
+    visibility: hidden;
+    animation: mobileNavOpacityOut .3s ease-out;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  .nav-primary { display: block; margin-top: 5px; }
+  .mobile-hamburger { display: none; }
+
+  .banner {
+    text-align: left;
+  }
+
+  .home.elementor-page,
+  .page-template-template-elementor {
+    .banner {
+      background: transparent;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  /* Sticky header */
+  .banner--sticky,
+  .banner--unsticky {
+    width: 100%;
+    position: fixed !important;
+    background: $banner-background !important;
+  }
+  .banner--sticky {
+    animation: stickyHeaderIn .3s ease-out;
+  }
+  .banner--unsticky {
+    top: -100px;
+    animation: stickyHeaderOut .3s ease-in;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { }

@@ -1,0 +1,19 @@
+.nav {
+  > li {
+    a {
+      &:hover,
+      &:focus {
+        background: rgba(255, 255, 255, 0.06);
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { }

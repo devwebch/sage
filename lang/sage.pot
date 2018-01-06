@@ -1,0 +1,158 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2017-12-21 17:51+0000\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: 404.php:6
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: base-homepage.php:11 base.php:12
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http:"
+"//browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+
+#: functions.php:24 lib/utils.php:18
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: home.php:3 index.php:5 search.php:5
+msgid "Sorry, no results were found."
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Custom Template"
+msgstr ""
+
+#. Name of the template
+msgid "Elementor"
+msgstr ""
+
+#. Name of the template
+msgid "Full width naked"
+msgstr ""
+
+#. Name of the template
+msgid "Full width"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage"
+msgstr ""
+
+#: lib/extras.php:33
+msgid "Continued"
+msgstr ""
+
+#: lib/setup.php:38
+msgid "Primary Navigation"
+msgstr ""
+
+#: lib/setup.php:39
+msgid "Mobile Navigation"
+msgstr ""
+
+#: lib/setup.php:76
+msgid "Primary"
+msgstr ""
+
+#: lib/setup.php:85
+msgid "Footer 1"
+msgstr ""
+
+#: lib/setup.php:93
+msgid "Footer 2"
+msgstr ""
+
+#: lib/setup.php:101
+msgid "Footer 3"
+msgstr ""
+
+#: lib/titles.php:13
+msgid "Latest Posts"
+msgstr ""
+
+#: lib/titles.php:18
+#, php-format
+msgid "Search Results for %s"
+msgstr ""
+
+#: lib/titles.php:20
+msgid "Not Found"
+msgstr ""
+
+#: lib/utils.php:34
+msgid "Previous"
+msgstr ""
+
+#: lib/utils.php:35
+msgid "Next"
+msgstr ""
+
+#: lib/utils.php:80
+msgid "First"
+msgstr ""
+
+#: lib/utils.php:83
+msgid "previous"
+msgstr ""
+
+#: lib/utils.php:98
+msgid "next"
+msgstr ""
+
+#: lib/utils.php:102
+msgid "Last"
+msgstr ""
+
+#: templates/comments.php:9
+#, php-format
+msgctxt "comments title"
+msgid "One response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/comments.php:19
+msgid "&larr; Older comments"
+msgstr ""
+
+#: templates/comments.php:22
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: templates/comments.php:31
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/entry-meta.php:2
+msgid "By"
+msgstr ""
+
+#. Name of the theme
+msgid "Sage"
+msgstr ""
+
+#. Description of the theme
+msgid "Sage is a fork of Sage starter theme by Roots.io"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://roots.io/sage/"
+msgstr ""
+
+#. Author of the theme
+msgid "DeveloppeurWeb"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://developpeurweb.ch"
+msgstr ""
