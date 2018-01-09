@@ -2,7 +2,8 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
-const OfflinePlugin = require('offline-plugin');
+const workboxPlugin = require('workbox-webpack-plugin');
+const dist = 'dist';
 
 const extractSass = new ExtractTextPlugin({ filename: "styles/[name].css" });
 
@@ -15,7 +16,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        publicPath: "../",
+        publicPath: '/wp-content/themes/sage/dist/',
         filename: "scripts/[name].js"
     },
     devtool: "source-map",
@@ -84,16 +85,38 @@ module.exports = {
                 NODE_ENV: '"development"'
             }
         }),
-        new OfflinePlugin({
-          autoUpdate: 1000 * 20,
-          AppCache: null,
-          caches: {
-            'main': [
-              '/pwa'
-            ],
-            'additional': [],
-            'optional': [],
-          }
+        new workboxPlugin({
+            globDirectory: path.resolve(__dirname, "./dist/"),
+            globPatterns: ['**\/*.{html,js,css}'],
+            swDest: path.join(dist, 'sw.js'),
+            clientsClaim: true,
+            skipWaiting: true,
+            runtimeCaching: [
+                {
+                    urlPattern: /(.jpg$|.png$)/,
+                    handler: 'cacheFirst',
+                    options: {
+                        cacheName: 'images-cache',
+                        cacheExpiration: {
+                            maxEntries: 10
+                        }
+                    }
+                },
+                {
+                    urlPattern: /\/$/,
+                    handler: 'networkFirst',
+                    options: {
+                        cacheName: 'page-cache',
+                        cacheExpiration: {
+                            maxEntries: 10
+                        }
+                    }
+                },
+                {
+                    urlPattern: new RegExp('(/wp-admin/|/wp-includes/)'),
+                    handler: 'networkOnly'
+                }
+                ]
         })
     ],
     externals: {

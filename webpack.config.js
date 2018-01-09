@@ -3,7 +3,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
-const OfflinePlugin = require('offline-plugin');
+const workboxPlugin = require('workbox-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
     filename: "styles/[name].css",
@@ -87,16 +87,12 @@ module.exports = {
             }
         }),
         new MinifyPlugin(),
-        new OfflinePlugin({
-          autoUpdate: 1000 * 20,
-          AppCache: null,
-          caches: {
-            'main': [
-              '/pwa'
-            ],
-            'additional': [],
-            'optional': [],
-          }
+        new workboxPlugin({
+            globDirectory: '/wp-content/themes/sage/dist',
+            globPatterns: ['**/*.{js}'],
+            swDest: path.join('dist', 'sw.js'),
+            clientsClaim: true,
+            skipWaiting: true
         })
     ],
     externals: {

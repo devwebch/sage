@@ -1,4 +1,4 @@
-<header class="banner banner--transparent">
+<header class="banner">
     <div class="container">
 
         <?php if ( has_custom_logo() ) : ?>

@@ -1,5 +1,3 @@
-require('offline-plugin/runtime').install();
-
 window.Vue = require('vue/dist/vue.common');
 
 // Vue component: Example
@@ -39,17 +37,15 @@ const app = new Vue({ el: '.wrap' });
                 // JavaScript to be fired on all pages
 
                 // Register Service Worker
-                /*if ('serviceWorker' in navigator) {
-                    window.addEventListener('load', function() {
-                        navigator.serviceWorker.register('/sw.js', {scope:'/'}).then(function(registration) {
-                            // Registration was successful
-                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                        }, function(err) {
-                            // registration failed :(
-                            console.log('ServiceWorker registration failed: ', err);
-                        });
+                if ('serviceWorker' in navigator) {
+                        window.addEventListener('load', () => {
+                            navigator.serviceWorker.register('/sw.js').then(registration => {
+                            console.log('SW registered: ', registration);
+                            }).catch(registrationError => {
+                                    console.log('SW registration failed: ', registrationError);
+                            });
                     });
-                }*/
+                }
 
                 /**
                  * Sticky header
