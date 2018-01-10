@@ -93,7 +93,7 @@ module.exports = {
             skipWaiting: true,
             runtimeCaching: [
                 {
-                    urlPattern: /(.jpg$|.png$)/,
+                    urlPattern: /(.jpg$|.png$|.gif$)/,
                     handler: 'cacheFirst',
                     options: {
                         cacheName: 'images-cache',
@@ -116,7 +116,7 @@ module.exports = {
                     urlPattern: new RegExp('(/wp-admin/|/wp-includes/)'),
                     handler: 'networkOnly'
                 }
-                ]
+            ]
         })
     ],
     externals: {

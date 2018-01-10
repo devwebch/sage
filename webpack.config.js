@@ -88,11 +88,37 @@ module.exports = {
         }),
         new MinifyPlugin(),
         new workboxPlugin({
-            globDirectory: '/wp-content/themes/sage/dist',
-            globPatterns: ['**/*.{js}'],
-            swDest: path.join('dist', 'sw.js'),
+            globDirectory: path.resolve(__dirname, "./dist/"),
+            globPatterns: ['**\/*.{html,js,css}'],
+            swDest: path.join(dist, 'sw.js'),
             clientsClaim: true,
-            skipWaiting: true
+            skipWaiting: true,
+            runtimeCaching: [
+                {
+                    urlPattern: /(.jpg$|.png$|.gif$)/,
+                    handler: 'cacheFirst',
+                    options: {
+                        cacheName: 'images-cache',
+                        cacheExpiration: {
+                            maxEntries: 10
+                        }
+                    }
+                },
+                {
+                    urlPattern: /\/$/,
+                    handler: 'networkFirst',
+                    options: {
+                        cacheName: 'page-cache',
+                        cacheExpiration: {
+                            maxEntries: 10
+                        }
+                    }
+                },
+                {
+                    urlPattern: new RegExp('(/wp-admin/|/wp-includes/)'),
+                    handler: 'networkOnly'
+                }
+            ]
         })
     ],
     externals: {
