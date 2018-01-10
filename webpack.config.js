@@ -4,6 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 const workboxPlugin = require('workbox-webpack-plugin');
+const dist = 'dist';
 
 const extractSass = new ExtractTextPlugin({
     filename: "styles/[name].css",
@@ -19,7 +20,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        publicPath: "../",
+        publicPath: '/wp-content/themes/sage/dist/',
         filename: "scripts/[name].js"
     },
     module: {
