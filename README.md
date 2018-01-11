@@ -2,25 +2,21 @@
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
+Sage is a WordPress starter theme based on HTML5 Boilerplate, webpack and Bootstrap Sass, that will help you make better themes.
 
 ## Requirements
 
 | Prerequisite    | How to check | How to install
 | --------------- | ------------ | ------------- |
-| PHP >= 5.4.x    | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
-| Node.js 0.12.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
-| gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
-| Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
+| PHP >= 7.x      | `php -v`     | [php.net](http://php.net/manual/en/install.php) |
+| Node.js 8.9.4   | `node -v`    | [nodejs.org](http://nodejs.org/) |
+| Webpack 3.x     | `gulp -v`    | [webpack.js.org](https://webpack.js.org) |
 
 For more installation notes, refer to the [Install gulp and Bower](#install-gulp-and-bower) section in this document.
 
 ## Features
 
-* [gulp](http://gulpjs.com/) build script that compiles both Sass and Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files
-* [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
-* [Bower](http://bower.io/) for front-end package management
-* [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
+* [webpack](https://webpack.js.org) build script that compiles Sass, checks for JavaScript errors, concatenates and minifies files
 * [Bootstrap](http://getbootstrap.com/)
 * [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
 * ARIA roles and microformats
@@ -33,38 +29,22 @@ Edit `lib/setup.php` to enable or disable theme features, setup navigation menus
 
 ## Theme development
 
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+Sage uses [webpack](https://webpack.js.org) as its build system.
 
-### Install gulp and Bower
+### Install node modules
 
 Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
 
 From the command line:
 
-1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
-2. Navigate to the theme directory, then run `npm install`
-3. Run `bower install`
+1. Install the modules with `npm install` inside the theme folder.
 
 You now have all the necessary dependencies to run the build process.
 
-### Available gulp commands
+### Available npm commands
 
-* `gulp` — Compile and optimize the files in your assets directory
-* `gulp watch` — Compile assets when file changes are made
-* `gulp --production` — Compile assets for production (no source maps).
-
-### Using BrowserSync
-
-To use BrowserSync during `gulp watch` you need to update `devUrl` at the bottom of `assets/manifest.json` to reflect your local development hostname.
-
-For example, if your local development URL is `http://project-name.dev` you would update the file to read:
-```json
-...
-  "config": {
-    "devUrl": "http://project-name.dev"
-  }
-...
-```
+* `npm run dev` — Compile and optimize the files from your assets directory to the dist directory, watches for changes
+* `npm run build` — Compile, optimize and minify the files from your assets directory to the dist directory
 
 ## Documentation
 
