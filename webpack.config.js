@@ -107,7 +107,7 @@ module.exports = {
                 },
                 {
                     urlPattern: /\/$/,
-                    handler: 'networkFirst',
+                    handler: 'staleWhileRevalidate',
                     options: {
                         cacheName: 'page-cache',
                         cacheExpiration: {
