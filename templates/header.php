@@ -13,7 +13,7 @@
                 wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
             endif;
             ?>
-            <p>Te</p>
+            <p>T</p>
         </nav>
 
         <div class="mobile-hamburger">
