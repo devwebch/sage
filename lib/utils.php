@@ -77,17 +77,17 @@ function pagination($args = array())
 
     $firstpage = esc_attr(get_pagenum_link(1));
     if ($firstpage && (1 != $page))
-        $echo .= '<li class="previous"><a href="' . $firstpage . '">' . __('First', 'sage') . '</a></li>';
+        $echo .= '<li class="page-item"><a href="' . $firstpage . '" class="page-link">' . __('First', 'sage') . '</a></li>';
 
     if ($previous && (1 != $page))
-        $echo .= '<li><a href="' . $previous . '" title="' . __('previous', 'sage') . '">' . $args['previous_string'] . '</a></li>';
+        $echo .= '<li class="page-item"><a href="' . $previous . '" title="' . __('previous', 'sage') . '" class="page-link">' . $args['previous_string'] . '</a></li>';
 
     if (!empty($min) && !empty($max)) {
         for ($i = $min; $i <= $max; $i++) {
             if ($page == $i) {
-                $echo .= '<li class="active"><span class="active">' . str_pad((int)$i, 2, '0', STR_PAD_LEFT) . '</span></li>';
+                $echo .= '<li class="page-item active"><a class="page-link">' . str_pad((int)$i, 2, '0', STR_PAD_LEFT) . '</a></li>';
             } else {
-                $echo .= sprintf('<li><a href="%s">%002d</a></li>', esc_attr(get_pagenum_link($i)), $i);
+                $echo .= sprintf('<li class="page-item"><a href="%s" class="page-link">%002d</a></li>', esc_attr(get_pagenum_link($i)), $i);
             }
         }
     }
@@ -95,11 +95,11 @@ function pagination($args = array())
     $next = intval($page) + 1;
     $next = esc_attr(get_pagenum_link($next));
     if ($next && ($count != $page))
-        $echo .= '<li><a href="' . $next . '" title="' . __('next', 'sage') . '">' . $args['next_string'] . '</a></li>';
+        $echo .= '<li class="page-item"><a href="' . $next . '" title="' . __('next', 'sage') . '" class="page-link">' . $args['next_string'] . '</a></li>';
 
     $lastpage = esc_attr(get_pagenum_link($count));
     if ($lastpage) {
-        $echo .= '<li class="next"><a href="' . $lastpage . '">' . __('Last', 'sage') . '</a></li>';
+        $echo .= '<li class="page-item"><a href="' . $lastpage . '" class="page-link">' . __('Last', 'sage') . '</a></li>';
     }
 
     if (isset($echo))

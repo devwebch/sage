@@ -1,46 +1,66 @@
 // Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$sidebar-columns:    4;
 
 // Colors
-$gray-base:             #000 !default;
-$gray-darker:           lighten($gray-base, 13.5%); // #222
-$gray-dark:             lighten($gray-base, 20%);   // #333
-$gray:                  lighten($gray-base, 33.5%); // #555
-$gray-light:            lighten($gray-base, 46.7%); // #777
-$gray-lighter:          lighten($gray-base, 93.5%); // #eee
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
 
-$brand-primary:         #607d8b;
-$brand-success:         #5cb85c;
-$brand-info:            #5bc0de;
-$brand-warning:         #f0ad4e;
-$brand-danger:          #d9534f;
+$blue:    #4f7eb1;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #638d41;
+$teal:    #20c997;
+$cyan:    #17a2b8;
 
-$banner-background: #638d41;
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
 
 // Typography
-$font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
-$font-family-base:        $font-family-sans-serif;
-$headings-font-family:    inherit !default;
-$font-size-base:          14px;
-$text-color:              $gray-dark;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
 
-$font-size-h1:            2.3em;
-$font-size-h2:            1.6em;
-$font-size-h3:            1.4em;
-$font-size-h4:            1.3em;
-$font-size-h5:            1.1em;
-$font-size-h6:            1em;
+$text-color:                  $dark;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.75;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base * 1.1;
+$h6-font-size:                $font-size-base;
+
+// Header
+$banner-background:       $blue;
 
 // Components
-$border-radius-base:    0;
-$border-radius-large:   0;
-$border-radius-small:   0;
+$btn-border-radius:       0;
+$btn-border-radius-lg:    0;
+$btn-border-radius-sm:    0;
 
 // Mobile hamburger
 $hamburger-line-width:      1px;
-$hamburger-position-top:    30px;
+$hamburger-position-top:    13px;
 $hamburger-position-right:  20px;
 $hamburger-color:           #fff;
 $hamburger-color-open:      #fff;

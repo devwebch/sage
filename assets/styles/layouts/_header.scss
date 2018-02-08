@@ -22,77 +22,6 @@
   background: transparent;
 }
 
-.nav-primary {
-  display: none;
-  float: right;
-
-  .nav {
-    list-style: none outside;
-    margin: 0;
-    padding: 0;
-
-    li {
-      float: left;
-      position: relative;
-
-      a {
-        color: #fff;
-      }
-      &.menu-item-has-children {
-        a {
-          padding-right: 28px;
-        }
-        > a::after {
-          font-family: 'FontAwesome';
-          content: "\f078";
-          font-size: 10px;
-          display: block;
-          width: 20px;
-          height: 20px;
-          position: absolute;
-          right: 0;
-          top: 30%;
-        }
-
-        .menu-item-has-children {
-          > a::after {
-            content: "\f054";
-          }
-        }
-
-        &:hover > .sub-menu {
-          display: block;
-        }
-      }
-    }
-  }
-  .sub-menu {
-    display: none;
-    position: absolute;
-    background: #fff;
-    color: #333;
-    list-style: none outside;
-    width: 200px;
-    margin: 0;
-    padding: 10px 0;
-
-    li {
-      float: none;
-
-      a {
-        display: block;
-        color: #666;
-        padding: 10px 20px;
-      }
-
-      .sub-menu {
-        left: 100%;
-        top: -10px;
-      }
-    }
-  }
-}
-
 .mobile-hamburger {
   position: absolute;
   top: $hamburger-position-top;
@@ -148,52 +77,12 @@
   }
 }
 
-.nav-mobile {
-  visibility: hidden;
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  padding: 0 50px;
-  color: #fff;
-  z-index: 10;
-  font-size: 1.2em;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 200;
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {}
 
-  ul {
-    list-style: none outside;
-    margin: 0;
-    padding: 0;
-    font-size: 1.3em;
-  }
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
 
-  a {
-    color: #fff;
-  }
-
-  &.open {
-    display: flex;
-    visibility: visible;
-    animation: mobileNavOpacityIn .3s ease-out;
-  }
-  &.closed {
-    visibility: hidden;
-    animation: mobileNavOpacityOut .3s ease-out;
-  }
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) { }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
-  .nav-primary { display: block; margin-top: 5px; }
   .mobile-hamburger { display: none; }
 
   .banner {
@@ -225,5 +114,7 @@
   }
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) { }
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {}
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {}

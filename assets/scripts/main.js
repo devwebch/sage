@@ -37,7 +37,7 @@ const app = new Vue({ el: '.wrap' });
                 // JavaScript to be fired on all pages
 
                 // Register Service Worker
-                if ('serviceWorker' in navigator) {
+                /*if ('serviceWorker' in navigator) {
                         window.addEventListener('load', () => {
                             navigator.serviceWorker.register('/sw.js').then(registration => {
                             console.log('SW registered: ', registration);
@@ -45,7 +45,7 @@ const app = new Vue({ el: '.wrap' });
                                     console.log('SW registration failed: ', registrationError);
                             });
                     });
-                }
+                }*/
 
                 /**
                  * Sticky header
