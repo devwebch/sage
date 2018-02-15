@@ -9,6 +9,10 @@
   }
 }
 
+.single-post .main {
+  @include make-col($grid-columns - $sidebar-columns);
+}
+
 .home,
 .page-template-template-elementor {
   .main {

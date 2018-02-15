@@ -1,14 +1,28 @@
 .footer {
-  background: #333;
+  background: #232830;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  a {
+    color: #fff;
+  }
+
+  ul {
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
 
   .widget {
     color: #fff;
 
     .widget__title {
-      font-size: 1rem;
-      margin: 0 0 10px;
+      font-size: 1.3rem;
+      margin: 0 0 30px;
       padding: 0;
     }
   }

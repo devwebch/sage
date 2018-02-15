@@ -74,37 +74,37 @@ add_image_size( 'post-thumbnail', 750, 300, true );
 function widgets_init()
 {
     register_sidebar([
-        'name' => __('Primary', 'sage'),
-        'id' => 'sidebar-primary',
+        'name'          => __('Primary', 'sage'),
+        'id'            => 'sidebar-primary',
         'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3 class="widget__title">',
-        'after_title' => '</h3>'
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget__title">',
+        'after_title'   => '</h3>'
     ]);
 
     register_sidebar([
-        'name' => __('Footer 1', 'sage'),
-        'id' => 'sidebar-footer-1',
+        'name'          => __('Footer 1', 'sage'),
+        'id'            => 'sidebar-footer-1',
         'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3 class="widget__title">',
-        'after_title' => '</h3>'
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget__title">',
+        'after_title'   => '</h3>'
     ]);
     register_sidebar([
-        'name' => __('Footer 2', 'sage'),
-        'id' => 'sidebar-footer-2',
+        'name'          => __('Footer 2', 'sage'),
+        'id'            => 'sidebar-footer-2',
         'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3 class="widget__title">',
-        'after_title' => '</h3>'
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget__title">',
+        'after_title'   => '</h3>'
     ]);
     register_sidebar([
-        'name' => __('Footer 3', 'sage'),
-        'id' => 'sidebar-footer-3',
+        'name'          => __('Footer 3', 'sage'),
+        'id'            => 'sidebar-footer-3',
         'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3 class="widget__title">',
-        'after_title' => '</h3>'
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget__title">',
+        'after_title'   => '</h3>'
     ]);
 }
 
@@ -122,6 +122,7 @@ function display_sidebar()
         // @link https://codex.wordpress.org/Conditional_Tags
         is_404(),
         is_front_page(),
+        is_single(),
         is_page_template('template-homepage.php'),
         is_page_template('template-custom.php'),
         is_page_template('template-full-width.php'),
@@ -153,7 +154,7 @@ function assets()
     wp_enqueue_style('sage/css', get_theme_file_uri('dist/styles/app.css'), false, null);
 
     // Fonts
-    wp_enqueue_style('sage/fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700', false, null);
+    wp_enqueue_style('sage/fonts', 'https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400,700', false, null);
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

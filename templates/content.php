@@ -13,7 +13,7 @@
     <div class="entry-summary">
         <?php the_excerpt(); ?>
         <div class="read-more">
-            <a href="<?php the_permalink(); ?>" class="btn btn-default read-more-link"><?php _e('Continued', 'sage'); ?></a>
+            <a href="<?php the_permalink(); ?>" class="btn btn-primary read-more-link"><?php _e('Continued', 'sage'); ?></a>
         </div>
     </div>
 </article>

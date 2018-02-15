@@ -1,3 +1,79 @@
+.home {
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section__title {
+    font-family: 'Montserrat', $font-family-sans-serif;
+    font-size: 3rem;
+  }
+
+  .section__introduction {
+    font-size: 1.1rem;
+  }
+
+  .section--jumbotron {
+    background: url(../images/breather-176228.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: transparentize(#000, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .row {
+      min-height: 70vh;
+    }
+
+    .section__title,
+    .section__introduction {
+      color: #fff;
+    }
+  }
+
+  .section--content {
+    .row {
+      min-height: 200px;
+    }
+  }
+
+  .section--content-image {
+    padding: 0;
+
+    .content {
+      padding: 0 100px;
+    }
+    .background {
+      min-height: 500px;
+      background: url(../images/section-bg-2.jpg) no-repeat;
+    }
+  }
+
+  .section--cta {
+    background: #222;
+    color: #fff;
+  }
+
+  .icon-block {
+    i {
+      font-size: 35px;
+      float: left;
+    }
+    .icon-block__content {
+      margin-left: 45px;
+    }
+  }
+}
+
 
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {}

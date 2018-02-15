@@ -51,7 +51,7 @@ $h5-font-size:                $font-size-base * 1.1;
 $h6-font-size:                $font-size-base;
 
 // Header
-$banner-background:       $blue;
+$banner-background:       #fff;
 
 // Components
 $btn-border-radius:       0;
@@ -64,3 +64,5 @@ $hamburger-position-top:    13px;
 $hamburger-position-right:  20px;
 $hamburger-color:           #fff;
 $hamburger-color-open:      #fff;
+
+$fa-font-path: "../fonts";

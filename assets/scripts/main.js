@@ -50,7 +50,7 @@ const app = new Vue({ el: '.wrap' });
                 /**
                  * Sticky header
                  */
-                let resetThreshold          = 80; // reset banner state
+                /*let resetThreshold          = 80; // reset banner state
                 let triggerThreshold        = 600; // change banner state
                 let resetIntentThreshold    = 300;
                 let lastScroll              = 0;
@@ -82,7 +82,7 @@ const app = new Vue({ el: '.wrap' });
                     }
                     // store the scroll value for comparison
                     lastScroll = window.scrollY;
-                });
+                });*/
 
                 /**
                  * Mobile navigation

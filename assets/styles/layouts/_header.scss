@@ -1,14 +1,14 @@
 .banner {
   background: $banner-background;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
   z-index: 10;
   text-align: center;
 
   .brand {
     font-size: 2em;
-    color: #fff;
+    color: #222;
   }
 
   .custom-logo {
