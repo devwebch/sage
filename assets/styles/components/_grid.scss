@@ -9,10 +9,6 @@
   }
 }
 
-.single-post .main {
-  @include make-col($grid-columns - $sidebar-columns);
-}
-
 .home,
 .page-template-template-elementor {
   .main {
@@ -22,6 +18,11 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+.wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .sidebar {
@@ -58,6 +59,10 @@
 }
 
 // Large devices (desktops, 992px and up)
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+  .single-post .main {
+    @include make-col($grid-columns - $sidebar-columns);
+  }
+}
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {}

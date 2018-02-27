@@ -25,9 +25,10 @@
       position: relative;
 
       a {
-        color: #222;
+        color: #fff;
         display: block;
         padding: 8px 15px;
+        text-decoration: none;
       }
       &.menu-item-has-children {
         a {
@@ -97,7 +98,7 @@
   padding: 0 50px;
   color: #fff;
   z-index: 10;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -134,9 +135,13 @@
 @include media-breakpoint-up(sm) {}
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
-  .nav-primary { display: block; margin-top: 5px; }
+  .nav-mobile {
+    font-size: 2rem;
+  }
 }
 // Large devices (desktops, 992px and up)
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+  .nav-primary { display: block; margin-top: 5px; }
+}
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {}

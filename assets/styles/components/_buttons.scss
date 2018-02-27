@@ -1,10 +1,10 @@
-.elementor-button {
-
-  &.elementor-size-sm,
-  &.elementor-size-md{
-    border-radius: 0;
-  }
+.btn,
+.comment-form input[type="submit"],
+.search-form .search-submit {
+  text-transform: uppercase;
+  font-size: 0.7rem;
 }
+
 
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {}

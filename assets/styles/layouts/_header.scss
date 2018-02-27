@@ -8,7 +8,7 @@
 
   .brand {
     font-size: 2em;
-    color: #222;
+    color: #fff;
   }
 
   .custom-logo {
@@ -83,8 +83,6 @@
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
 
-  .mobile-hamburger { display: none; }
-
   .banner {
     text-align: left;
   }
@@ -115,6 +113,8 @@
 }
 
 // Large devices (desktops, 992px and up)
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+  .mobile-hamburger { display: none; }
+}
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {}

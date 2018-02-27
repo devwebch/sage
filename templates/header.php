@@ -1,4 +1,4 @@
-<header class="banner">
+<header class="banner banner--transparent">
     <div class="container">
         <div class="row">
             <div class="col">

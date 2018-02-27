@@ -1,7 +1,7 @@
 .footer {
   background: #232830;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 10px;
 
   a {
     color: #fff;
@@ -19,6 +19,7 @@
 
   .widget {
     color: #fff;
+    margin-bottom: 40px;
 
     .widget__title {
       font-size: 1.3rem;
@@ -33,6 +34,11 @@
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {}
 // Large devices (desktops, 992px and up)
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {}
