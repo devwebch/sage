@@ -141,7 +141,7 @@
 }
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
-  .nav-primary { display: block; margin-top: 5px; }
+  .nav-primary { display: block; }
 }
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {}

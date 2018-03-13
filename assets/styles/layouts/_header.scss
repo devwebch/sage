@@ -1,19 +1,26 @@
 .banner {
   background: $banner-background;
-  padding-top: 30px;
-  padding-bottom: 30px;
   position: relative;
   z-index: 10;
   text-align: center;
 
+  .row {
+    height: 100px;
+  }
+
   .brand {
     font-size: 2em;
     color: #fff;
+    line-height: 1em;
   }
 
   .custom-logo {
     width: 150px;
     height: auto;
+  }
+
+  .custom-logo-link {
+
   }
 }
 .home .banner--transparent {

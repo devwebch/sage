@@ -1,6 +1,6 @@
 <header class="banner banner--transparent">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col">
                 <?php if ( has_custom_logo() ) : ?>
                     <?php the_custom_logo(); ?>
