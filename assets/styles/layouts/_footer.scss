@@ -29,6 +29,12 @@
   }
 }
 
+.sub-footer {
+  background: $gray-900;
+  color: #fff;
+  padding: 10px 0;
+}
+
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {}
 // Medium devices (tablets, 768px and up)
