@@ -81,6 +81,12 @@ function register_required_plugins()
             'source'      => 'https://github.com/roots/soil/archive/master.zip',
             'required'    => true,
         ),
+        array(
+            'name'        => 'ACF Pro',
+            'slug'        => 'advanced-custom-fields-pro',
+            'source'      => 'https://devweb.ch/plugin-repository/advanced-custom-fields-pro.zip',
+            'required'    => true,
+        ),
 
     );
 

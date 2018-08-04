@@ -87,7 +87,7 @@ module.exports = {
                 NODE_ENV: '"production"'
             }
         }),
-        new MinifyPlugin(),
+        new MinifyPlugin({}, {comments: false}),
         new workboxPlugin({
             globDirectory: path.resolve(__dirname, "./dist/"),
             globPatterns: ['**\/*.{html,js,css}'],
