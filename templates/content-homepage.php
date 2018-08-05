@@ -27,7 +27,6 @@ if (have_rows('content_sections')):
         <?php if (get_row_layout() == 'icon_block'): ?>
             <?php get_template_part('templates/acf/section', 'blocks'); ?>
         <?php endif; ?>
-
     <?php endwhile;
 else :
     // no layouts found
