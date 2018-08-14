@@ -34,6 +34,13 @@ function excerpt_more() {
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
+function short_excerpt()
+{
+    $excerpt = get_the_excerpt();
+    $sub_excerpt = substr($excerpt, 0, 200);
+    return apply_filters('the_content', $sub_excerpt);
+}
+
 add_action('tgmpa_register', __NAMESPACE__ . '\\register_required_plugins');
 function register_required_plugins()
 {
