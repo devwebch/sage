@@ -88,15 +88,17 @@ const app = new Vue({ el: '.wrap' });
                  * Mobile navigation
                  */
                 var fadeSpeed = 200;
-                $('.mobile-hamburger').click(function (e) {
-                    $(this).toggleClass('open');
-                    $('.nav-mobile').toggleClass('open').toggleClass('closed', !$('.nav-mobile').hasClass('open'));
-                    $('body').toggleClass('nav-mobile-open');
-                });
                 $('.nav-mobile').click(function (e) {
-                    $('.mobile-hamburger').toggleClass('open');
+                    $('.hamburger').toggleClass('is-active');
+                    $('.hamburger').focusout();
                     $(this).toggleClass('open').toggleClass('closed', !$('.nav-mobile').hasClass('open'));
                     $('body').removeClass('nav-mobile-open');
+                });
+
+                $('.hamburger').click(function (e) {
+                    $(this).toggleClass('is-active');
+                    $('body').toggleClass('nav-mobile-open');
+                    $('.nav-mobile').toggleClass('open').toggleClass('closed', !$('.nav-mobile').hasClass('open'));
                 });
             },
             finalize: function () {

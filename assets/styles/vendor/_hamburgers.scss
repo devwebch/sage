@@ -1,0 +1,20 @@
+$hamburger-layer-color: #fff;
+$hamburger-padding-x: 5px;
+$hamburger-padding-y: 5px;
+$hamburger-layer-width: 35px;
+$hamburger-layer-height: 4px;
+
+.hamburger {
+  position: absolute;
+  right: 20px;
+  z-index: 20;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+@import "~hamburgers/_sass/hamburgers/hamburgers";

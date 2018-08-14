@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col">
-                <?php if ( has_custom_logo() ) : ?>
+                <?php if (has_custom_logo()) : ?>
                     <?php the_custom_logo(); ?>
                 <?php else: ?>
                     <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
@@ -16,9 +16,11 @@
                     ?>
                 </nav>
 
-                <div class="mobile-hamburger">
-                    <span></span><span></span><span></span><span></span>
-                </div>
+                <button class="hamburger hamburger--spin" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                </button>
 
                 <div class="nav-mobile">
                     <?php wp_nav_menu(['theme_location' => 'mobile_navigation', 'menu_class' => 'nav', 'depth' => 1]); ?>
