@@ -108,14 +108,18 @@
     }
   }
 
-  .icon-block {
-    i {
-      font-size: 45px;
-      float: left;
-      color: $blue;
-    }
-    .icon-block__content {
-      margin-left: 65px;
+  .section--blocks {
+    .icon-block {
+      margin-bottom: 40px;
+
+      i {
+        font-size: 45px;
+        float: left;
+        color: $blue;
+      }
+      .icon-block__content {
+        margin-left: 65px;
+      }
     }
   }
 }
@@ -152,9 +156,9 @@
       }
     }
 
-    .section--services {
+    .section--blocks {
       .icon-block {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
       }
 
       .left {

@@ -4,7 +4,7 @@ $sub_title      = get_sub_field('sub_title');
 $link           = get_sub_field('link');
 $link_label     = get_sub_field('link_label');
 ?>
-<section class="section section--content section--services">
+<section class="section section--content section--blocks">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 left">
