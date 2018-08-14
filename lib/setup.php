@@ -154,7 +154,7 @@ function assets()
     wp_enqueue_style('sage/css', get_theme_file_uri('dist/styles/app.css'), false, null);
 
     // Fonts
-    wp_enqueue_style('sage/fonts', 'https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400,700', false, null);
+    wp_enqueue_style('sage/fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,600|Open+Sans:400,700', false, null);
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

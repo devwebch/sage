@@ -1,11 +1,13 @@
 .home {
 
+  /**
+  Section base
+   */
   .section {
     padding: 50px 0;
   }
 
   .section__title {
-    font-family: 'Montserrat', $font-family-sans-serif;
     font-size: 3rem;
     line-height: 3rem;
     margin-bottom: 20px;
@@ -20,8 +22,11 @@
     font-size: 1rem;
   }
 
+  /**
+  Jumbotron
+   */
   .section--jumbotron {
-    background: url(../images/iStock_79322059_XXLARGE_opt.jpg) no-repeat center center;
+    background: no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -49,17 +54,10 @@
     }
   }
 
-  .section--services {
-    .icon-block {
-      margin-bottom: 40px;
-    }
-
-    .left {
-      margin-bottom: 40px;
-    }
-  }
-
-  .section--content {
+  /**
+  Section one column
+   */
+  .section--one-column {
     .row {
       min-height: 200px;
     }
@@ -70,7 +68,6 @@
   }
 
   .section--content-image {
-    padding: 0;
 
     .content {
       padding-top: 50px;
@@ -83,20 +80,16 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+    .image {
+      img {
+        max-width: 450px;
+      }
+    }
+
     p {
       margin-bottom: 20px;
     }
-  }
-
-  .section--website .background {
-    background-image: url(../images/carl-heyerdahl-181868.jpg);
-  }
-  .section--ux .background {
-    background-image: url(../images/thomas-lefebvre-3950.jpg);
-  }
-
-  .section--opensource .background {
-    background-image: url(../images/artem-sapegin-176819.jpg);
   }
 
   .section--cta {
@@ -139,14 +132,10 @@
   .home {
 
     .section--content-image {
-      padding: 0;
-
       .content {
         padding: 0 50px;
       }
-      .background {
-        height: 80vh;
-      }
+      .background {}
     }
 
     .section--jumbotron {padding: 0}
@@ -178,9 +167,7 @@
 @include media-breakpoint-up(xl) {
   .home {
     .section {padding: 150px 0;}
-    .section--content-image {padding: 0;}
     .section--jumbotron {padding: 0}
-    .section--content-image {padding: 0;}
     .section--cta {padding: 50px 0;}
   }
 }
