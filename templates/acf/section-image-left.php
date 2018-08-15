@@ -22,7 +22,7 @@ $sub_title              = get_sub_field('sub_title');
                 <?php endif; ?>
                 <?php the_sub_field('content'); ?>
                 <?php if (get_sub_field('link')): ?>
-                    <a href="<?php the_sub_field('link'); ?>" class="btn btn-default btn-orange">En savoir plus</a>
+                    <a href="<?php the_sub_field('link'); ?>" class="btn btn-outline-dark">En savoir plus</a>
                 <?php endif; ?>
             </div>
         </div>

@@ -29,7 +29,7 @@ if ( get_sub_field('color_1') && get_sub_field('color_2')) {
                     </div>
                 <?php endif; ?>
                 <?php if ( get_sub_field('btn_link') ): ?>
-                    <a href="<?php the_sub_field('btn_link'); ?>" class="btn btn-default btn-white" style="<?php echo $btn_color; ?>"><?php the_sub_field('btn_label') ?></a>
+                    <a href="<?php the_sub_field('btn_link'); ?>" class="btn btn-outline-dark" style="<?php echo $btn_color; ?>"><?php the_sub_field('btn_label') ?></a>
                 <?php endif; ?>
             </div>
         </div>
