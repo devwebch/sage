@@ -28,4 +28,4 @@ if ( get_field('jumbotron_color') ) {
     </div>
 </section>
 
-<?php get_template_part('templates/acf/content-sections'); ?>
+<?php get_template_part('templates/acf/homepage-sections'); ?>
