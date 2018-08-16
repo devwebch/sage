@@ -1,12 +1,13 @@
 <?php
 $image                  = get_sub_field('image');
 $image_in_background    = get_sub_field('background_image');
-$container_class        = ($image_in_background) ? 'container-fluid' : 'container';
+$container_class        = (is_front_page()) ? 'container' : 'wrapper';
+$container_type        = ($image_in_background) ? 'container-fluid' : $container_class;
 $section_class          = ($image_in_background) ? 'pt-0 pb-0' : '';
 $sub_title              = get_sub_field('sub_title');
 ?>
 <section class="section section--content-image <?php echo $section_class; ?>">
-    <div class="<?php echo $container_class; ?>">
+    <div class="<?php echo $container_type; ?>">
         <div class="row align-items-center">
             <?php if (!$image_in_background): ?>
                 <div class="col-md-6 order-2 order-md-0 image mb-4 mb-md-0">

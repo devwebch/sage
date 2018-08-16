@@ -16,7 +16,7 @@ if ( get_sub_field('color_1') && get_sub_field('color_2')) {
 
 ?>
 <section class="section section--one-column" style="<?php echo $background . $color; ?>">
-    <div class="container">
+    <div class="<?php echo (is_front_page()) ? 'container' : 'wrapper'; ?>">
         <div class="row align-items-center">
             <div class="col text-center">
                 <h2 class="section__title"><?php the_sub_field('title'); ?></h2>

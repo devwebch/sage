@@ -5,7 +5,7 @@ $link           = get_sub_field('link');
 $link_label     = get_sub_field('link_label');
 ?>
 <section class="section section--content section--blocks">
-    <div class="container">
+    <div class="<?php echo (is_front_page()) ? 'container' : 'wrapper'; ?>">
         <div class="row">
             <div class="col-lg-4 left">
                 <h2 class="section__title"><?php echo $title; ?></h2>

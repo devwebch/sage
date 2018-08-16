@@ -2,11 +2,15 @@
 use Roots\Sage\Extras;
 ?>
 <section class="section section--blog">
-    <div class="container">
+    <div class="<?php echo (is_front_page()) ? 'container' : 'wrapper'; ?>">
         <div class="row">
             <div class="col content">
-                <h2 class="section__title text-center"><?php the_sub_field('title'); ?></h2>
-                <h3 class="section__sub-title text-center"><?php the_sub_field('sub_title'); ?></h3>
+                <?php if ( get_sub_field('title') ): ?>
+                    <h2 class="section__title text-center"><?php the_sub_field('title'); ?></h2>
+                <?php endif; ?>
+                <?php if ( get_sub_field('sub_title') ): ?>
+                    <h3 class="section__sub-title text-center"><?php the_sub_field('sub_title'); ?></h3>
+                <?php endif; ?>
 
                 <?php
                 $posts_query = new WP_Query([

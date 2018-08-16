@@ -9,7 +9,7 @@ if ( $text_color ) { $style .= ' color: ' . $text_color . ';'; }
 if ( $background_color ) { $style .= ' background-color: ' . $background_color . ';'; }
 ?>
 <section class="section section--cta" style="<?php echo $style; ?>">
-    <div class="container">
+    <div class="<?php echo (is_front_page()) ? 'container' : 'wrapper'; ?>">
         <div class="row align-items-center">
             <div class="col text-center">
                 <h2 class="section__title <?php echo ($sub_title) ?: 'mb-0'; ?>"><?php echo $title; ?></h2>

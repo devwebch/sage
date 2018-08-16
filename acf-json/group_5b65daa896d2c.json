@@ -1,6 +1,6 @@
 {
     "key": "group_5b65daa896d2c",
-    "title": "Contenu",
+    "title": "Sections page d'accueil",
     "fields": [
         {
             "key": "field_5b65daae518a6",
@@ -703,9 +703,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "page"
+                "value": "template-homepage.php"
             }
         ]
     ],
@@ -717,5 +717,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534281316
+    "modified": 1534433334
 }
