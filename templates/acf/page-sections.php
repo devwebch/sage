@@ -12,6 +12,9 @@ if (have_rows('page_sections')):
         <?php if (get_row_layout() == 'four_columns'): ?>
             <?php get_template_part('templates/acf/section', 'four-columns'); ?>
         <?php endif; ?>
+        <?php if (get_row_layout() == 'table_container'): ?>
+            <?php get_template_part('templates/acf/section', 'table'); ?>
+        <?php endif; ?>
     <?php endwhile;
 else :
     // no layouts found

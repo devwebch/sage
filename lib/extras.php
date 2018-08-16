@@ -94,7 +94,11 @@ function register_required_plugins()
             'source'      => 'https://devweb.ch/plugin-repository/advanced-custom-fields-pro.zip',
             'required'    => true,
         ),
-
+        array(
+            'name'        => 'Advanced Custom Fields: Table Field',
+            'slug'        => 'advanced-custom-fields-table-field',
+            'required'    => true,
+        ),
     );
 
     $config = array(

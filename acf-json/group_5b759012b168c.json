@@ -216,6 +216,31 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5b75c78aa8a1e": {
+                    "key": "layout_5b75c78aa8a1e",
+                    "name": "table_container",
+                    "label": "Tableau",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b75c793a8a1f",
+                            "label": "Tableau",
+                            "name": "table",
+                            "type": "table",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "use_header": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Ajouter un élément",
@@ -245,5 +270,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534433377
+    "modified": 1534445523
 }
