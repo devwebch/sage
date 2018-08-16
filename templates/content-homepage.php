@@ -48,6 +48,9 @@ if (have_rows('content_sections')):
         <?php if (get_row_layout() == 'one-column'): ?>
             <?php get_template_part('templates/acf/section', 'one-column'); ?>
         <?php endif; ?>
+        <?php if (get_row_layout() == 'blog'): ?>
+            <?php get_template_part('templates/acf/section', 'blog'); ?>
+        <?php endif; ?>
     <?php endwhile;
 else :
     // no layouts found

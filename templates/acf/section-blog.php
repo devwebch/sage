@@ -1,7 +1,7 @@
 <?php
 use Roots\Sage\Extras;
 ?>
-<section class="section">
+<section class="section section--blog">
     <div class="container">
         <div class="row">
             <div class="col content">
