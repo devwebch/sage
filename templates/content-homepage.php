@@ -18,7 +18,7 @@ if ( get_field('jumbotron_color') ) {
                 <p class="section__introduction"><?php the_field('jumbotron_introduction'); ?></p>
 
                 <?php if ( get_field('jumbotron_btn_link') ): ?>
-                    <a href="<?php the_field('jumbotron_btn_link'); ?>" class="btn btn-default btn-orange">
+                    <a href="<?php the_field('jumbotron_btn_link'); ?>" class="btn btn-primary">
                         <?php the_field('jumbotron_btn_label'); ?>
                         <i class="fas fa-magic ml-2"></i>
                     </a>

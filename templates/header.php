@@ -7,7 +7,8 @@
                 <?php else: ?>
                     <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
                 <?php endif; ?>
-
+            </div>
+            <div class="col">
                 <nav class="nav-primary">
                     <?php
                     if (has_nav_menu('primary_navigation')) :
@@ -15,16 +16,14 @@
                     endif;
                     ?>
                 </nav>
-
+                <div class="nav-mobile">
+                    <?php wp_nav_menu(['theme_location' => 'mobile_navigation', 'menu_class' => 'nav', 'depth' => 1]); ?>
+                </div>
                 <button class="hamburger hamburger--spin" type="button">
                       <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                       </span>
                 </button>
-
-                <div class="nav-mobile">
-                    <?php wp_nav_menu(['theme_location' => 'mobile_navigation', 'menu_class' => 'nav', 'depth' => 1]); ?>
-                </div>
             </div>
         </div>
     </div>

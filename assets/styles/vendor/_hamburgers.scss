@@ -5,9 +5,9 @@ $hamburger-layer-width: 35px;
 $hamburger-layer-height: 4px;
 
 .hamburger {
-  position: absolute;
-  right: 20px;
+  float: right;
   z-index: 20;
+  position: relative;
 
   &:focus {
     outline: none;

@@ -11,7 +11,6 @@
 
 .nav-primary {
   display: none;
-  float: right;
 
   .nav {
     list-style: none outside;
@@ -89,7 +88,7 @@
 
 .nav-mobile {
   visibility: hidden;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   position: fixed;
   top: 0;
   left: 0;
@@ -141,7 +140,7 @@
 }
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
-  .nav-primary { display: block; }
+  .nav-primary { display: flex; justify-content: flex-end; }
 }
 // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {}

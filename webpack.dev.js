@@ -12,6 +12,9 @@ module.exports = {
         app: [
             path.resolve(__dirname, "./assets/scripts/main.js"),
             path.resolve(__dirname, "./assets/styles/main.scss")
+        ],
+        customizer: [
+            path.resolve(__dirname, "./assets/scripts/customizer.js")
         ]
     },
     output: {
