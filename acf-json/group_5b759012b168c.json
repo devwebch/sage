@@ -18,12 +18,41 @@
             "layouts": {
                 "5b759282d2eaf": {
                     "key": "5b759282d2eaf",
+                    "name": "one_column",
+                    "label": "1 colonne",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b7593f2627b2",
+                            "label": "Colonne 1",
+                            "name": "column_1",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "visual",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5b7eb5d1f266d": {
+                    "key": "layout_5b7eb5d1f266d",
                     "name": "two_columns",
                     "label": "2 colonnes",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5b7593f2627b2",
+                            "key": "field_5b7eb5d1f266e",
                             "label": "Colonne 1",
                             "name": "column_1",
                             "type": "wysiwyg",
@@ -42,7 +71,7 @@
                             "delay": 1
                         },
                         {
-                            "key": "field_5b759407627b3",
+                            "key": "field_5b7eb5d1f266f",
                             "label": "Colonne 2",
                             "name": "column_2",
                             "type": "wysiwyg",
@@ -270,5 +299,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534445523
+    "modified": 1535031198
 }

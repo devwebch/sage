@@ -3,41 +3,27 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-12-21 17:51+0000\n"
+"POT-Creation-Date: 2018-08-23 13:40+0000\n"
 "Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: Loco - https://localise.biz/"
-
-#: 404.php:6
-msgid "Sorry, but the page you were trying to view does not exist."
-msgstr ""
-
-#: base-homepage.php:11 base.php:12
-msgid ""
-"You are using an <strong>outdated</strong> browser. Please <a href=\"http:"
-"//browsehappy.com/\">upgrade your browser</a> to improve your experience."
-msgstr ""
+"X-Generator: Loco https://localise.biz/"
 
 #: functions.php:24 lib/utils.php:18
 #, php-format
 msgid "Error locating %s for inclusion"
 msgstr ""
 
-#: home.php:3 index.php:5 search.php:5
-msgid "Sorry, no results were found."
+#: 404.php:6
+msgid "Sorry, but the page you were trying to view does not exist."
 msgstr ""
 
-#. Template Name of the plugin/theme
-msgid "Custom Template"
+#: index.php:5 home.php:6 search.php:5
+msgid "Sorry, no results were found."
 msgstr ""
 
 #. Name of the template
 msgid "Elementor"
-msgstr ""
-
-#. Name of the template
-msgid "Full width naked"
 msgstr ""
 
 #. Name of the template
@@ -48,32 +34,28 @@ msgstr ""
 msgid "Homepage"
 msgstr ""
 
-#: lib/extras.php:33
-msgid "Continued"
+#: base.php:12 base-homepage.php:11
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http:"
+"//browsehappy.com/\">upgrade your browser</a> to improve your experience."
 msgstr ""
 
-#: lib/setup.php:38
-msgid "Primary Navigation"
+#. Name of the template
+msgid "Full width naked"
 msgstr ""
 
-#: lib/setup.php:39
-msgid "Mobile Navigation"
+#. Template Name of the plugin/theme
+msgid "Custom Template"
 msgstr ""
 
-#: lib/setup.php:76
-msgid "Primary"
+#: searchform.php:3 searchform.php:7
+msgctxt "label"
+msgid "Search for:"
 msgstr ""
 
-#: lib/setup.php:85
-msgid "Footer 1"
-msgstr ""
-
-#: lib/setup.php:93
-msgid "Footer 2"
-msgstr ""
-
-#: lib/setup.php:101
-msgid "Footer 3"
+#: searchform.php:5
+msgctxt "placeholder"
+msgid "Search"
 msgstr ""
 
 #: lib/titles.php:13
@@ -87,6 +69,30 @@ msgstr ""
 
 #: lib/titles.php:20
 msgid "Not Found"
+msgstr ""
+
+#: lib/setup.php:38
+msgid "Primary Navigation"
+msgstr ""
+
+#: lib/setup.php:39
+msgid "Mobile Navigation"
+msgstr ""
+
+#: lib/setup.php:77
+msgid "Primary"
+msgstr ""
+
+#: lib/setup.php:86
+msgid "Footer 1"
+msgstr ""
+
+#: lib/setup.php:94
+msgid "Footer 2"
+msgstr ""
+
+#: lib/setup.php:102
+msgid "Footer 3"
 msgstr ""
 
 #: lib/utils.php:34
@@ -113,6 +119,10 @@ msgstr ""
 msgid "Last"
 msgstr ""
 
+#: templates/entry-meta.php:6
+msgid "By"
+msgstr ""
+
 #: templates/comments.php:9
 #, php-format
 msgctxt "comments title"
@@ -133,8 +143,8 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: templates/entry-meta.php:2
-msgid "By"
+#: templates/content.php:16
+msgid "Continued"
 msgstr ""
 
 #. Name of the theme

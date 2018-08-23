@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-01-06 18:19+0000\n"
-"Language: fr-FR\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
-"PO-Revision-Date: 2018-01-06 18:20+0000\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"POT-Creation-Date: 2018-08-23 13:40+0000\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"PO-Revision-Date: 2018-08-23 13:48+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
 "Project-Id-Version: Sage\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: atlas <dev-email@flywheel.local>\n"
-"Language-Team: French (France)\n"
+"Language-Team: Français\n"
 "MIME-Version: 1.0"
 
 #: functions.php:24 lib/utils.php:18
@@ -18,17 +18,17 @@ msgstr ""
 msgid "Error locating %s for inclusion"
 msgstr "Erreur lors de la location de %s pour inclusion"
 
-#. Template Name of the plugin/theme
-msgid "Custom Template"
-msgstr "Modèle custom"
+#: 404.php:6
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Désolé, mais la page que vous essayez d'atteindre n'existe pas."
+
+#: index.php:5 home.php:6 search.php:5
+msgid "Sorry, no results were found."
+msgstr "Désolé, aucun résultat n'a été trouvé."
 
 #. Name of the template
 msgid "Elementor"
 msgstr ""
-
-#. Name of the template
-msgid "Full width naked"
-msgstr "Pleine largeur (nu)"
 
 #. Name of the template
 msgid "Full width"
@@ -38,35 +38,7 @@ msgstr "Pleine largeur"
 msgid "Homepage"
 msgstr "Page d'accueil"
 
-#: lib/setup.php:76
-msgid "Primary"
-msgstr "Primaire"
-
-#. Name of the theme
-msgid "Sage"
-msgstr ""
-
-#. Description of the theme
-msgid "Sage is a fork of Sage starter theme by Roots.io"
-msgstr ""
-
-#. Theme URI of the plugin/theme
-msgid "https://roots.io/sage/"
-msgstr ""
-
-#. Author of the theme
-msgid "DeveloppeurWeb"
-msgstr ""
-
-#. Author URI of the theme
-msgid "https://developpeurweb.ch"
-msgstr ""
-
-#: 404.php:6
-msgid "Sorry, but the page you were trying to view does not exist."
-msgstr "Désolé, mais la page que vous essayez d'atteindre n'existe pas."
-
-#: base-homepage.php:11 base.php:12
+#: base.php:12 base-homepage.php:11
 msgid ""
 "You are using an <strong>outdated</strong> browser. Please <a href=\"http:"
 "//browsehappy.com/\">upgrade your browser</a> to improve your experience."
@@ -75,33 +47,23 @@ msgstr ""
 "href=\"http://browsehappy.com/\">mettre à jour votre navigateur</a> afin "
 "d'améliorer votre expérience de navigation."
 
-#: home.php:3 index.php:5 search.php:5
-msgid "Sorry, no results were found."
-msgstr "Désolé, aucun résultat n'a été trouvé."
+#. Name of the template
+msgid "Full width naked"
+msgstr "Pleine largeur (nu)"
 
-#: lib/extras.php:33
-msgid "Continued"
-msgstr "Lire la suite"
+#. Template Name of the plugin/theme
+msgid "Custom Template"
+msgstr "Modèle custom"
 
-#: lib/setup.php:38
-msgid "Primary Navigation"
-msgstr "Navigation principale"
+#: searchform.php:3 searchform.php:7
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
 
-#: lib/setup.php:39
-msgid "Mobile Navigation"
-msgstr "Navigation mobile"
-
-#: lib/setup.php:85
-msgid "Footer 1"
-msgstr "Pied-de-page 1"
-
-#: lib/setup.php:93
-msgid "Footer 2"
-msgstr "Pied-de-page 2"
-
-#: lib/setup.php:101
-msgid "Footer 3"
-msgstr "Pied-de-page 3"
+#: searchform.php:5
+msgctxt "placeholder"
+msgid "Search"
+msgstr "Rechercher"
 
 #: lib/titles.php:13
 msgid "Latest Posts"
@@ -115,6 +77,30 @@ msgstr "Résultats de recherche pour %s"
 #: lib/titles.php:20
 msgid "Not Found"
 msgstr "Introuvable"
+
+#: lib/setup.php:38
+msgid "Primary Navigation"
+msgstr "Navigation principale"
+
+#: lib/setup.php:39
+msgid "Mobile Navigation"
+msgstr "Navigation mobile"
+
+#: lib/setup.php:77
+msgid "Primary"
+msgstr "Primaire"
+
+#: lib/setup.php:86
+msgid "Footer 1"
+msgstr "Pied-de-page 1"
+
+#: lib/setup.php:94
+msgid "Footer 2"
+msgstr "Pied-de-page 2"
+
+#: lib/setup.php:102
+msgid "Footer 3"
+msgstr "Pied-de-page 3"
 
 #: lib/utils.php:34
 msgid "Previous"
@@ -140,6 +126,10 @@ msgstr "suivant"
 msgid "Last"
 msgstr "Fin"
 
+#: templates/entry-meta.php:6
+msgid "By"
+msgstr "Par"
+
 #: templates/comments.php:9
 #, php-format
 msgctxt "comments title"
@@ -160,6 +150,26 @@ msgstr "Commentaires plus récents &rarr;"
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: templates/entry-meta.php:2
-msgid "By"
-msgstr "Par"
+#: templates/content.php:16
+msgid "Continued"
+msgstr "Lire la suite"
+
+#. Name of the theme
+msgid "Sage"
+msgstr ""
+
+#. Description of the theme
+msgid "Sage is a fork of Sage starter theme by Roots.io"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://roots.io/sage/"
+msgstr ""
+
+#. Author of the theme
+msgid "DeveloppeurWeb"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://developpeurweb.ch"
+msgstr ""

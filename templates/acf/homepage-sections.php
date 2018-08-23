@@ -16,7 +16,7 @@ if (have_rows('content_sections')):
             <?php get_template_part('templates/acf/section', 'blocks'); ?>
         <?php endif; ?>
         <?php if (get_row_layout() == 'one-column'): ?>
-            <?php get_template_part('templates/acf/section', 'one-column'); ?>
+            <?php get_template_part('templates/acf/section', 'one-column-bg'); ?>
         <?php endif; ?>
         <?php if (get_row_layout() == 'blog'): ?>
             <?php get_template_part('templates/acf/section', 'blog'); ?>

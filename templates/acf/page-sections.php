@@ -3,6 +3,9 @@
 if (have_rows('page_sections')):
     // loop through the rows of data
     while (have_rows('page_sections')) : the_row(); ?>
+        <?php if (get_row_layout() == 'one_column'): ?>
+            <?php get_template_part('templates/acf/section', 'one-column'); ?>
+        <?php endif; ?>
         <?php if (get_row_layout() == 'two_columns'): ?>
             <?php get_template_part('templates/acf/section', 'two-columns'); ?>
         <?php endif; ?>
